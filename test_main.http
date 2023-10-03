@@ -1,0 +1,109 @@
+# Test your FastAPI endpoints
+
+POST http://127.0.0.1:8000/users?nickname=carlos
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/users?nickname=juan
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/users?nickname=franco
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/users?nickname=tomi
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/games?user_id=1&game_name=anyGameName&password=correctPassword&min=4&max=12
+Accept: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/games?user_id=2&game_id=1&password=incorrectPassword
+Accept: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/games?user_id=2&game_id=1&password=correctPassword
+Accept: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/games?user_id=3&game_id=1&password=correctPassword
+Accept: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/games?user_id=4&game_id=1&password=correctPassword
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/games/1
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games/1/players_order
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games/1/1
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games/1/2
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games/1/3
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/games/1/4
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/games/1/2/Lanzallamas?choosed_player_id=1
+Accept: application/json
+
+###
+
+# POST http://127.0.0.1:8000/games/1/3/Lanzallamas?choosed_player_id=2
+# Accept: application/json
+
+###
+
+# POST http://127.0.0.1:8000/games/1/3/Lanzallamas?choosed_player_id=2
+# Accept: application/json
+
+###
+
+# POST http://127.0.0.1:8000/games/1/3/Lanzallamas?choosed_player_id=2
+# Accept: application/json
